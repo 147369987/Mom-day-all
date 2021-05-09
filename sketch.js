@@ -18,7 +18,7 @@ function preload(){
   enemy2 = loadImage("alien2.png");
   gameOver = loadImage("mom.jpg");
   
-  slashingSound = loadSound("knifeSwoosh.mp3");
+  ///slashingSound = loadSound("knifeSwoosh.mp3");
 }
 
 function setup(){
@@ -54,7 +54,7 @@ function draw(){
     if (sword.isTouching(FruitGroup)){
       FruitGroup.destroyEach();
       score = score+5;
-      slashingSound.play();
+     // slashingSound.play();
     }
       
     if(sword.isTouching(EnemyGroup)){
